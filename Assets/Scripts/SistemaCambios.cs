@@ -19,6 +19,15 @@ public class SistemaCambios : MonoBehaviour
     public int pantalonSeleccionado = 0;
     public int zapatoSeleccionado = 0;
 
+
+    public void Start()
+    {
+        sombreroActual = sombreros[sombreroSeleccionado];
+        playeraActual = playeras[playeraSeleccionada];
+        pantalonActual = pantalones[pantalonSeleccionado];
+        zapatoActual = zapatos[zapatoSeleccionado];
+    }
+
     public void SiguienteSombrero()
     {
         sombreros[sombreroSeleccionado].SetActive(false);

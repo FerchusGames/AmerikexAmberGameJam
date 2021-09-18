@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class SistemaComprobación : MonoBehaviour
 {
-    public Vestimenta vestimenta;
     public SistemaCambios sistemaCambios;
+
+    int valorTotal;
 
     int valorSombrero;
     int valorPlayera;
@@ -14,9 +15,23 @@ public class SistemaComprobación : MonoBehaviour
     GameObject pantalon;
     GameObject zapato;
 
+
+    public void Comprobar()
+    {
+    }
     public void SumaVestimenta()
     {
-        sombrero = sistemaCambios.sombreroActual;
-        Debug.Log(sombrero.name);
+        AsignarPrendas();
+        valorTotal = valorSombrero + valorPantalon + valorPlayera + valorZapato;
+        Debug.Log(valorTotal);
     }
+
+    public void AsignarPrendas()
+    {
+        valorSombrero = sistemaCambios.sombreroActual.GetComponent<Vestimenta>().valorVestimenta;
+        valorPlayera = sistemaCambios.playeraActual.GetComponent<Vestimenta>().valorVestimenta;
+        valorPantalon = sistemaCambios.pantalonActual.GetComponent<Vestimenta>().valorVestimenta;
+        valorZapato = sistemaCambios.zapatoActual.GetComponent<Vestimenta>().valorVestimenta;
+    }
+
 }
