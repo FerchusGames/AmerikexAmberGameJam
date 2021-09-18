@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class Vestimenta : MonoBehaviour
 {
-    [SerializeField] int valorVestimenta;
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int valorVestimenta;
 }

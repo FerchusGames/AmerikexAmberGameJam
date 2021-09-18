@@ -10,6 +10,10 @@ public class SistemaCambios : MonoBehaviour
     public GameObject[] playeras;
     public GameObject[] pantalones;
     public GameObject[] zapatos;
+    public GameObject sombreroActual;
+    public GameObject playeraActual;
+    public GameObject pantalonActual;
+    public GameObject zapatoActual;
     public int sombreroSeleccionado = 0;
     public int playeraSeleccionada = 0;
     public int pantalonSeleccionado = 0;
@@ -20,6 +24,7 @@ public class SistemaCambios : MonoBehaviour
         sombreros[sombreroSeleccionado].SetActive(false);
         sombreroSeleccionado = (sombreroSeleccionado + 1) % sombreros.Length;
         sombreros[sombreroSeleccionado].SetActive(true);
+        sombreroActual = sombreros[sombreroSeleccionado];
     }
 
     public void AnteriorSombrero()
@@ -31,6 +36,7 @@ public class SistemaCambios : MonoBehaviour
             sombreroSeleccionado += sombreros.Length;
         }
         sombreros[sombreroSeleccionado].SetActive(true);
+        sombreroActual = sombreros[sombreroSeleccionado];
     }
 
     public void SiguientePlayera()
@@ -38,6 +44,7 @@ public class SistemaCambios : MonoBehaviour
         playeras[playeraSeleccionada].SetActive(false);
         playeraSeleccionada = (playeraSeleccionada + 1) % playeras.Length;
         playeras[playeraSeleccionada].SetActive(true);
+        playeraActual = playeras[playeraSeleccionada];
     }
 
     public void AnteriorPlayera()
@@ -50,6 +57,7 @@ public class SistemaCambios : MonoBehaviour
             playeraSeleccionada += playeras.Length;
         }
         playeras[playeraSeleccionada].SetActive(true);
+        playeraActual = playeras[playeraSeleccionada];
     }
 
     public void SiguientePantalon()
@@ -57,6 +65,7 @@ public class SistemaCambios : MonoBehaviour
         pantalones[pantalonSeleccionado].SetActive(false);
         pantalonSeleccionado = (pantalonSeleccionado + 1) % pantalones.Length;
         pantalones[pantalonSeleccionado].SetActive(true);
+        pantalonActual = pantalones[pantalonSeleccionado];
     }
 
     public void AnteriorPantalon()
@@ -69,6 +78,7 @@ public class SistemaCambios : MonoBehaviour
             pantalonSeleccionado += pantalones.Length;
         }
         pantalones[pantalonSeleccionado].SetActive(true);
+        pantalonActual = pantalones[pantalonSeleccionado];
     }
 
     public void SiguienteZapato()
@@ -76,6 +86,7 @@ public class SistemaCambios : MonoBehaviour
         zapatos[zapatoSeleccionado].SetActive(false);
         zapatoSeleccionado = (zapatoSeleccionado + 1) % zapatos.Length;
         zapatos[zapatoSeleccionado].SetActive(true);
+        zapatoActual = zapatos[zapatoSeleccionado];
     }
 
     public void AnteriorZapato()
@@ -88,5 +99,6 @@ public class SistemaCambios : MonoBehaviour
             zapatoSeleccionado += zapatos.Length;
         }
         zapatos[zapatoSeleccionado].SetActive(true);
+        zapatoActual = zapatos[zapatoSeleccionado];
     }
 }
