@@ -17,6 +17,6 @@ public class SistemaComprobación : MonoBehaviour
     public void SumaVestimenta()
     {
         sombrero = sistemaCambios.sombreroActual;
-        
+        Debug.Log(sombrero.name);
     }
 }
