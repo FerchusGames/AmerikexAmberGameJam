@@ -3,8 +3,7 @@ using UnityEngine;
 public class SistemaComprobación : MonoBehaviour
 {
     public SistemaCambios sistemaCambios;
-
-    int valorTotal;
+    public Cliente cliente;
 
     int valorSombrero;
     int valorPlayera;
@@ -15,15 +14,31 @@ public class SistemaComprobación : MonoBehaviour
     GameObject pantalon;
     GameObject zapato;
 
+    public int valorTotal;
+    public int valorComparar;
 
+    public void Submit()
+    {
+        SumaVestimenta();
+        Comprobar();
+        cliente.PrepareClient();
+    }
     public void Comprobar()
     {
+        if (valorComparar == valorTotal)
+        {
+            Debug.Log("Yay");
+        }
+        else
+        {
+            Debug.LogError("Nay");
+        }
     }
+
     public void SumaVestimenta()
     {
         AsignarPrendas();
         valorTotal = valorSombrero + valorPantalon + valorPlayera + valorZapato;
-        Debug.Log(valorTotal);
     }
 
     public void AsignarPrendas()

@@ -3584,6 +3584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471080572}
   - component: {fileID: 1471080571}
+  - component: {fileID: 1471080573}
   m_Layer: 0
   m_Name: Cliente
   m_TagString: Untagged
@@ -3656,6 +3657,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1471080573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471080570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a04ad671755307e46a7cd5460cdb0b76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comprobacion: {fileID: 1983630866}
+  clientes: 710c00009e0500005d1c000068120000290b00004b2100002a160000ca180000
+  random_number: 0
+  previous_random_number: 0
 --- !u!1001 &1483014338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4606,7 +4623,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1983630866}
         m_TargetAssemblyTypeName: "SistemaComprobaci\xF3n, Assembly-CSharp"
-        m_MethodName: SumaVestimenta
+        m_MethodName: Submit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4698,6 +4715,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sistemaCambios: {fileID: 1225647064}
+  cliente: {fileID: 1471080573}
+  valorTotal: 0
+  valorComparar: 0
 --- !u!1001 &2025112312
 PrefabInstance:
   m_ObjectHideFlags: 0
