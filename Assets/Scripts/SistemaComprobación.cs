@@ -17,6 +17,8 @@ public class SistemaComprobación : MonoBehaviour
     public int valorTotal;
     public int valorComparar;
 
+    public SceneChanger sceneChanger;
+
     public void Submit()
     {
         SumaVestimenta();
@@ -31,7 +33,7 @@ public class SistemaComprobación : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Nay");
+            sceneChanger.Gameover();
         }
     }
 
