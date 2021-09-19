@@ -18,8 +18,11 @@ public class SistemaComprobación : MonoBehaviour
     public int valorComparar;
 
     public SceneChanger sceneChanger;
-
+    
     public Scores scores;
+
+    public Timer timer;
+    public float tiempo_extra;
     public void Submit()
     {
         SumaVestimenta();
@@ -31,6 +34,7 @@ public class SistemaComprobación : MonoBehaviour
         if (valorComparar == valorTotal)
         {
             scores.AddScore();
+            timer.AddToTimer(tiempo_extra);
         }
         else
         {
