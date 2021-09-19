@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public bool gameDone;
+    public bool loseflag;
     public float timer;
     public float current_time;
     public Text timer_text;
@@ -34,6 +35,7 @@ public class Timer : MonoBehaviour
     public void Start()
     {
         gameDone = false;
+        loseflag = false;
         SetTimer();
     }
 
@@ -42,10 +44,11 @@ public class Timer : MonoBehaviour
         if (!gameDone)
             SubstractToTimer(0.0f);
 
-        if (current_time <= 0)
+        if (current_time <= 0 && !loseflag)
         {
             timer_text.text = "0:00";
             gameDone = true;
+            loseflag = true;
             sistemaComprbacion.valorTotal = 0;
             sistemaComprbacion.Comprobar();
         }

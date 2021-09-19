@@ -886,6 +886,10 @@ PrefabInstance:
       propertyPath: fadeout
       value: 
       objectReference: {fileID: 366230464}
+    - target: {fileID: 3600303263561597079, guid: 2eb18f82fed223641b8467a396e4c0f5, type: 3}
+      propertyPath: gameoverScene
+      value: GameOver
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eb18f82fed223641b8467a396e4c0f5, type: 3}
 --- !u!1 &1814629891
@@ -989,6 +993,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2066884704}
     m_Modifications:
+    - target: {fileID: 8699306873614372768, guid: 7f45faa90ab1e4c48952d00c7190d816, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0cef47a6ed5c21542a188fada4c58689, type: 3}
     - target: {fileID: 8699306873614372770, guid: 7f45faa90ab1e4c48952d00c7190d816, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1073,6 +1081,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8699306873614372771, guid: 7f45faa90ab1e4c48952d00c7190d816, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: fee03fd7182657548b6ec93c53c21e40, type: 2}
     - target: {fileID: 8699306873614372773, guid: 7f45faa90ab1e4c48952d00c7190d816, type: 3}
       propertyPath: m_Name
       value: FadeImage

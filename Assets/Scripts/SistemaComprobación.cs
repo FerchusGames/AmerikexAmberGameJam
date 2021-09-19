@@ -38,6 +38,7 @@ public class SistemaComprobación : MonoBehaviour
         }
         else
         {
+            timer.loseflag = true;
             scores.SubmitScores();
             sceneChanger.Gameover();
         }
