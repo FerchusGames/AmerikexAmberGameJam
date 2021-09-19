@@ -12,6 +12,7 @@ public class BackgroundManager : MonoBehaviour
         backgrounds[backgroundSeleccionado].SetActive(false);
         backgroundSeleccionado = (backgroundSeleccionado + 1) % backgrounds.Length;
         backgrounds[backgroundSeleccionado].SetActive(true);
+        GuardarBackground();
     }
 
     public void AnteriorBackground()
@@ -23,6 +24,23 @@ public class BackgroundManager : MonoBehaviour
             backgroundSeleccionado += backgrounds.Length;
         }
         backgrounds[backgroundSeleccionado].SetActive(true);
+        GuardarBackground();
     }
+
+    private void Start()
+    {
+        backgroundSeleccionado = 0;
+        if (PlayerPrefs.HasKey("Background"))
+        {
+            backgroundSeleccionado = PlayerPrefs.GetInt("Background");
+            backgrounds[backgroundSeleccionado].SetActive(true);
+        }
+    }
+
+    public void GuardarBackground()
+    {
+        PlayerPrefs.SetInt("Background", backgroundSeleccionado);
+    }
+
 
 }

@@ -5237,11 +5237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 854952259817863024, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 361
+      value: 343
       objectReference: {fileID: 0}
     - target: {fileID: 854952259817863024, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -313
+      value: -335
       objectReference: {fileID: 0}
     - target: {fileID: 854952259817863024, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5260,12 +5260,16 @@ PrefabInstance:
       value: Timer
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670811289472, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 417fc9bb57a55c14d8c05e18017ac1f4, type: 3}
+    - target: {fileID: 3278776670811289472, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_FontData.m_MinSize
-      value: 9
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670811289472, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670811289473, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -5277,19 +5281,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670894486798, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 50
+      value: 72.7813
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670894486798, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 72.7813
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670894486798, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -128.39998
+      value: -120.9
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670894486798, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 84.7
+      value: 84
       objectReference: {fileID: 0}
     - target: {fileID: 3278776670894486799, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_IsActive
@@ -5297,7 +5301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3278776671470162944, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 103.1
+      value: 98.4
       objectReference: {fileID: 0}
     - target: {fileID: 3278776671470162944, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -7987,6 +7991,10 @@ PrefabInstance:
     - target: {fileID: 7486902043004356880, guid: 9e0be4a07159a8d4db16f9541e6a3208, type: 3}
       propertyPath: m_Name
       value: Background_AngelIndependencia
+      objectReference: {fileID: 0}
+    - target: {fileID: 7486902043004356880, guid: 9e0be4a07159a8d4db16f9541e6a3208, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7486902043004356882, guid: 9e0be4a07159a8d4db16f9541e6a3208, type: 3}
       propertyPath: m_RootOrder
