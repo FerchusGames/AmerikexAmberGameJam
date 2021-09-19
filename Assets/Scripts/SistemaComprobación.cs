@@ -18,6 +18,7 @@ public class SistemaComprobación : MonoBehaviour
     public int valorComparar;
 
     public SceneChanger sceneChanger;
+    public CambioClientes cambioClientes;
     
     public Scores scores;
 
@@ -28,6 +29,7 @@ public class SistemaComprobación : MonoBehaviour
         SumaVestimenta();
         Comprobar();
         cliente.PrepareClient();
+        cambioClientes.siguienteCliente();
     }
     public void Comprobar()
     {
