@@ -9,6 +9,11 @@ public class Timer : MonoBehaviour
     public bool loseflag;
     public float timer;
     public float current_time;
+    public Color color1;
+    public Color color2;
+
+    public Color lerper;
+
     public Text timer_text;
     public Image timer_image;
 
@@ -29,7 +34,10 @@ public class Timer : MonoBehaviour
     {
         current_time -= Time.deltaTime * 1.0f;
         timer_text.text = current_time.ToString("F2").Replace(".", ":");
-        timer_image.fillAmount = current_time / (timer);
+        timer_image.fillAmount = current_time / timer;
+        lerper = Color.Lerp(color1, color2, (current_time / timer));
+        timer_image.color = Color.Lerp(color1, color2, (current_time / timer));
+        
     }
 
     public void Start()
