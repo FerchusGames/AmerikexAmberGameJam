@@ -5,15 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public SceneFader fader;
-    //public void ChangeScene(string _scene)
-    //{
-    //    StartCoroutine(FadeOut(_scene));
-    //}
+    public string gameoverScene;
+    public GameObject fadeout;
+    void Start()
+    {
+        gameoverScene = "GameOver"; //Default Gameover scene
+    }
+    public void Gameover()// Changes to Gameover scene when it's called
+    {
+        SceneManager.LoadScene(gameoverScene);
+    }
 
-    //IEnumerator FadeOut(string _scene)
-    //{
-    //    SceneManager.LoadScene(_scene);
+    public void ChangeLevel(string levelToLoad) //Changes scene to whatever scene is passed into the function
+    {
+        StartCoroutine( FadeOut(levelToLoad));
+    }
 
-    //}
+    public IEnumerator FadeOut(string _levelName)
+    {
+        fadeout.GetComponent<Animator>().Play("Base Layer.Fade Out", 0, 0.3f);
+
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(_levelName);
+    }
+
 }
