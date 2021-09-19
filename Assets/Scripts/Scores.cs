@@ -7,6 +7,7 @@ public class Scores : MonoBehaviour
 {
     public int current_score;
     public int high_score;
+    public int delete_score_cheat;
 
     public Text current_score_text;
     public Text high_score_text;
@@ -48,9 +49,10 @@ public class Scores : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-            AddScore();
         if (Input.GetKeyDown(KeyCode.D))
+            delete_score_cheat++;
+
+        if (delete_score_cheat == 10)
             PlayerPrefs.DeleteKey("HiScore");
     }
 }
