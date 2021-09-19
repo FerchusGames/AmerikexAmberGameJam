@@ -25,7 +25,7 @@ public class SceneChanger : MonoBehaviour
     {
         fadeout.GetComponent<Animator>().Play("Base Layer.Fade Out", 0, 0.3f);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(_levelName);
     }
 
