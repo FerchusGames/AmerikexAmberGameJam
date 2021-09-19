@@ -21,6 +21,7 @@ public class Timer : MonoBehaviour
     public void AddToTimer(float _time_to_add)
     {
         current_time += _time_to_add;
+        current_time = Mathf.Clamp(current_time, 0f, timer);
     }
 
     public void SubstractToTimer(float _time_to_substract)
