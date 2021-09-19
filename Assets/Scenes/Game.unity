@@ -5331,6 +5331,22 @@ PrefabInstance:
       propertyPath: sistemaComprbacion
       value: 
       objectReference: {fileID: 1826071641}
+    - target: {fileID: 8809523640361618993, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 72.7813
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809523640361618993, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 72.7813
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809523640361618993, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -120.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809523640361618993, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 83.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8ac18dcdb9f5594985144b283055ec6, type: 3}
 --- !u!114 &1445897088 stripped

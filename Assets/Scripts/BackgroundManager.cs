@@ -34,6 +34,10 @@ public class BackgroundManager : MonoBehaviour
         {
             backgroundSeleccionado = PlayerPrefs.GetInt("Background");
             backgrounds[backgroundSeleccionado].SetActive(true);
+        } else
+        {
+            PlayerPrefs.SetInt("Background", backgroundSeleccionado);
+            backgrounds[backgroundSeleccionado].SetActive(true);
         }
     }
 
